@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#3AF3DD"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="☕WAKUU CAFE☕"
+        android:textColor="#052AFA"
+        android:textSize="32sp"
+        android:textStyle="bold|italic"
+        android:gravity="center"
+        android:layout_margin="8dp"
+        android:padding="8dp"
+        android:id="@+id/titleOne" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:text="Toppings"
+        android:textColor="#0C0C0C"
+        android:textSize="24sp"
+        android:gravity="left"
+        android:layout_margin="8dp"
+        android:padding="8dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1.5"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:checked="false"
+            android:text="Chapati"
+            android:textSize="24dp"
+            android:id="@+id/chapati"/>
+
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_height="123dp"
+            android:layout_weight="1"
+            android:checked="false"
+            android:text="Mandazi"
+            android:textSize="24dp"
+            android:id="@+id/mandazi"/>
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_height="123dp"
+            android:layout_weight="1"
+            android:checked="false"
+            android:text="Bread"
+            android:textSize="24dp"
+            android:id="@+id/bread"/>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:text="No. of Coffees"
+        android:textColor="#0C0C0C"
+        android:textSize="24sp"
+        android:gravity="left"
+        android:layout_margin="8dp"
+        android:padding="8dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <Button
+            android:id="@+id/minus"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center|top"
+            android:onClick="btnMinus"
+            android:text="-"
+            android:textColor="@color/black"
+            android:textSize="88sp" />
+
+        <TextView
+            android:id="@+id/numberOfCoffee"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="#0C0C0C"
+            android:textSize="48dp"
+            android:textStyle="bold"
+            android:translationY="-30dp" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="88sp"
+            android:id="@+id/plus"
+            android:onClick="btnPlus"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:text="0"
+        android:textColor="#052AFA"
+        android:textSize="24dp"
+        android:textStyle="normal"
+        android:gravity="left"
+        android:layout_margin="8dp"
+        android:padding="8dp"
+        android:id="@+id/bill" />
+
+    <Button
+        android:id="@+id/order"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:background="@color/black"
+        android:gravity="center"
+        android:onClick="btnOrder"
+        android:text="order"
+        android:textColor="@color/white"
+        android:textSize="48sp"
+        />
+</LinearLayout>
